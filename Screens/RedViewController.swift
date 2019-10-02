@@ -7,9 +7,8 @@
 //
 
 import UIKit
-//yello screens red button we made a abaction func that does unwindToRed and then goes back to a 
 class RedViewController: numberedViewController {
-
+//this is creating an unwind segue that can revert yourself to the root VC
     @IBAction func unwindToRed(_ sender: UIStoryboardSegue){
         
     }

@@ -14,7 +14,7 @@ class numberedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//this is taking accecing the view and saying the sub view is a label that i made above. 
+
         view.addSubview(label)
         label.textColor = .white
         label.textAlignment = .center
@@ -27,7 +27,7 @@ class numberedViewController: UIViewController {
         
         if let number = navigationController?.viewControllers.count {
             label.text = String(number)
-//            label.sizeToFit()
+            label.sizeToFit()
             tabBarItem.badgeValue = String(number)
             navigationController?.tabBarItem.badgeValue = String(number)
         }
